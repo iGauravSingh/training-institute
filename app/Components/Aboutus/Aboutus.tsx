@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Aboutus = () => {
   return (
     <div className=' w-screen h-[576px] flex justify-center items-center font-quicksand text-navcolor'>
-        <div className=' flex  w-[90%] h-[416px] mt-6'>
+        <div className=' flex  w-[85%] h-[416px] mt-6'>
             {/* Aboutus  */}
             <div className=' w-[50%]'>
                 <h3 className=' text-newblue font-bold text-lg'>ABOUT US</h3>
