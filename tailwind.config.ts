@@ -7,13 +7,22 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      "quicksand": "Quicksand",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        'navcolor': '#212635',
+        'newblue': '#2e8ece',
+        'bluebackground': '#f4f9fd',
+      },
     },
+    
   },
   plugins: [],
 };
