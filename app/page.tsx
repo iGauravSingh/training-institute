@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Topbar from "./Components/Topbar/Topbar";
 import Navbar from "./Components/Navbar/Navbar";
@@ -11,8 +12,12 @@ import UpcomingEvents from "./Components/UpcomingEvents/UpcomingEvents";
 import Consultation from "./Components/Consultation/Consultation";
 import Footer from "./Components/Footer/Footer";
 
+import { Provider } from "react-redux";
+import { store } from "./Components/app/store";
+
 export default function Home() {
   return (
+    <Provider store={store} >
     <>
     <Topbar />
     <Navbar />
@@ -26,5 +31,6 @@ export default function Home() {
     <Consultation />
     <Footer />
     </>
+    </Provider>
   );
 }

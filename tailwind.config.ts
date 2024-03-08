@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       "quicksand": "Quicksand",
+      "roboto": "Roboto",
     },
     extend: {
       backgroundImage: {
@@ -21,6 +22,26 @@ const config: Config = {
         'newblue': '#2e8ece',
         'bluebackground': '#f4f9fd',
       },
+      keyframes: {
+        slide: {
+          '0%': { translate: '0 -24px'},
+          '100%': { translate: '0 0px'},
+        },
+        blinker: {
+          '0%': { scale: '1'},
+          '50%': { scale: '.25'},
+          '100%': { scale: '1'}
+        },
+        moveup: {
+          '0%': { translate: '0 20px'},
+          '100%': { translate: '0 0px'},
+        }
+      },
+      animation: {
+        'slide-down': 'slide 0.2s linear',
+        'blink-icon': 'blinker 0.5s linear',
+        'moveup-cont': 'moveup 0.5s linear',
+      }
     },
     
   },

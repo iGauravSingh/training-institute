@@ -80,7 +80,7 @@ const UpcomingEvents = () => {
           {eventData.map((evnt) => (
             <>
               {/* card containr  */}
-              <div className=" flex border-b-2 justify-between items-center pb-5 pt-4">
+              <div key={evnt.id} className=" flex border-b-2 justify-between items-center pb-5 pt-4">
                 {/* Date Detail Container  */}
                 <div className=" flex justify-between items-center gap-6">
                   {/* Date  */}

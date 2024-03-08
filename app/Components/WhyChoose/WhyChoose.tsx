@@ -11,20 +11,19 @@ const WhyChoose = () => {
       <div className=" flex flex-col justify-start">
       <h3 className=" text-newblue font-semibold">WHY CHOOSE US</h3>
         {/* card containr  */}
-        <div className=" flex gap-1 mt-6">
+        <div className=" flex gap-1 mt-10">
           {/* card 1  */}
           <div className=" w-[292px] h-[198px] group flex flex-col justify-start">
             {/* logo in circle  */}
-            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:scale-75 transition-transform duration-350 ease-in-out">
+            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:animate-blink-icon">
               <VscSmiley size={25} color="white" />
             </div>
             {/* description  */}
             <h3 className=" group-hover:text-newblue font-semibold mt-7">
-              BEING HAPPY
+              COMITTMENT
             </h3>
             <p className=" mt-4 text-sm ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry orem Ipsum has been.
+              Life Time Enrollment
             </p>
           </div>
 
@@ -32,16 +31,15 @@ const WhyChoose = () => {
           {/* card 2  */}
           <div className=" w-[292px] h-[198px] group  flex flex-col justify-start">
             {/* logo in circle  */}
-            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center">
+            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:animate-blink-icon">
               <FaRegLightbulb size={30} color="white" />
             </div>
             {/* description  */}
             <h3 className=" group-hover:text-newblue font-semibold mt-7">
-              FULFILLING POTENTIAL
+              EXPERT GUDIENCE
             </h3>
             <p className=" mt-4 text-sm ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry orem Ipsum has been.
+              Training By Expert IITians/Industrial Experts.
             </p>
           </div>
 
@@ -50,16 +48,15 @@ const WhyChoose = () => {
           {/* card 3  */}
           <div className=" w-[292px] h-[198px] group  flex flex-col justify-start">
             {/* logo in circle  */}
-            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center">
+            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:animate-blink-icon">
               <GiGraduateCap size={30} color="white" />
             </div>
             {/* description  */}
             <h3 className=" group-hover:text-newblue font-semibold mt-7">
-              MAKING CHANCES
+              INDUSTRY EXPOSURE
             </h3>
             <p className=" mt-4 text-sm ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry orem Ipsum has been.
+              Our Training are made with current technology in mind.
             </p>
           </div>
 
@@ -68,16 +65,15 @@ const WhyChoose = () => {
           {/* card 4  */}
           <div className=" w-[292px] h-[198px] group flex flex-col justify-start">
             {/* logo in circle  */}
-            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:scale-75 transition-transform duration-350 ease-in-out">
+            <div className=" w-14 h-14 rounded-full bg-newblue group-hover:bg-navcolor flex justify-center items-center group-hover:animate-blink-icon">
               <FaRegPaperPlane size={25} color="white" />
             </div>
             {/* description  */}
             <h3 className=" group-hover:text-newblue font-semibold mt-7">
-              FINDING BALANCE
+              PLACEMENT ASSISTANCE
             </h3>
             <p className=" mt-4 text-sm ">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry orem Ipsum has been.
+              We prepare students for jobs and good career.
             </p>
           </div>
 

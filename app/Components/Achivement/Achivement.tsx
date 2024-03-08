@@ -11,8 +11,8 @@ const Achivement = () => {
       <div className=" relative w-screen h-[50%] flex flex-col justify-center items-center">
         <FaLeaf size={45} color="white" className=" z-10" />
         <h3 className=" text-[1.71rem] w-[50%] text-center font-bold text-white z-10 mt-2">
-          We're here to help you reach your goal of coaching people to reach
-          their full potential.
+          We&apos;re here to help you reach your goal and reach your full
+          potential.
         </h3>
         <p className="text-md w-[60%] text-center text-white z-10 mt-2">
           We provide innovative solutions for sustainable progress. Our
@@ -23,27 +23,31 @@ const Achivement = () => {
       </div>
 
       {/* Stats  */}
-      <div className=" w-screen h-[50%] flex justify-center items-center gap-6">
-        <div>
-          <h2 className=" w-[350px] h-[168px] font-bold text-4xl text-navcolor">
-            We Have Great Achivment To Show!!
-          </h2>
-        </div>
-        <div className=" flex flex-col gap-2">
-          <h1 className=" font-bold text-4xl text-newblue">1238</h1>
-          <p>Satisfied Customers</p>
-        </div>
-        <div className=" flex flex-col gap-2">
-          <h1 className=" font-bold text-4xl text-newblue">850</h1>
-          <p>People Across</p>
-        </div>
-        <div className=" flex flex-col gap-2">
-          <h1 className=" font-bold text-4xl text-newblue">10</h1>
-          <p>Years Experience</p>
-        </div>
-        <div className=" flex flex-col gap-2">
-          <h1 className=" font-bold text-4xl text-newblue">232</h1>
-          <p>Persons Mentored</p>
+      <div className=" w-screen h-[50%] ">
+        <div className=" w-[85%] h-full flex justify-center items-center gap-6">
+          <div>
+            <h2 className=" w-[20rem] h-[168px] font-bold text-4xl text-navcolor">
+              We Have Great Achivment To Show!!
+            </h2>
+          </div>
+          <div className=" flex gap-8">
+          <div className=" flex flex-col gap-2">
+            <h1 className=" font-bold text-4xl text-newblue">1238</h1>
+            <p>Satisfied Customers</p>
+          </div>
+          <div className=" flex flex-col gap-2">
+            <h1 className=" font-bold text-4xl text-newblue">850</h1>
+            <p>People Across</p>
+          </div>
+          <div className=" flex flex-col gap-2">
+            <h1 className=" font-bold text-4xl text-newblue">10</h1>
+            <p>Years Experience</p>
+          </div>
+          <div className=" flex flex-col gap-2">
+            <h1 className=" font-bold text-4xl text-newblue">232</h1>
+            <p>Persons Mentored</p>
+          </div>
+          </div>
         </div>
       </div>
     </div>

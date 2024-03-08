@@ -4,6 +4,8 @@ import { GiGraduateCap } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 import { FaRegCircle } from "react-icons/fa6";
+import { MdPlagiarism } from "react-icons/md";
+import { RiArticleFill } from "react-icons/ri";
 
 const Helpyou = () => {
   return (
@@ -14,16 +16,17 @@ const Helpyou = () => {
           {/* card containr  */}
           <div className=" flex gap-6 mt-6">
             {/* card 1  */}
+            
             <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
-              <FaLeaf size={72} color="#2e8ece" />
+              <RiArticleFill size={72} color="#2e8ece" />
               {/* description  */}
-              <h3 className=" group-hover:text-newblue font-semibold mt-7">
-                Life Coaching
+              <h3 className=" group-hover:text-newblue  font-semibold mt-7 text-center">
+                Paper Writing and Publication
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block transition-transform duration-350 ease-in-out ">
-                Create anything from social media posts business.
+                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                We provide assistance in publication of paper in SCI, Scopus Indexed journals.
               </p>
               </div>
               
@@ -33,14 +36,14 @@ const Helpyou = () => {
             {/* card 2  */}
             <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
-              <GiGraduateCap size={72} color="#2e8ece" />
+              <MdPlagiarism size={72} color="#2e8ece" />
               {/* description  */}
               <h3 className=" group-hover:text-newblue font-semibold mt-7">
-                Life Coaching
+                Plagiarism Removal
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block transition-transform duration-350 ease-in-out ">
-                Create anything from social media posts business.
+                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                We provide assistance in plagiarism removal on Turnitin Tool.
               </p>
               </div>
               
@@ -51,14 +54,14 @@ const Helpyou = () => {
             {/* card 3  */}
             <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
-              <FaHeart size={72} color="#2e8ece" />
+              <GiGraduateCap size={72} color="#2e8ece" />
               {/* description  */}
               <h3 className=" group-hover:text-newblue font-semibold mt-7">
-                Life Coaching
+                Project Training
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block transition-transform duration-350 ease-in-out ">
-                Create anything from social media posts business.
+                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                We provide three months project training for MCA Students on latest trends.
               </p>
               </div>
               
@@ -72,11 +75,11 @@ const Helpyou = () => {
               <IoIosPeople size={72} color="#2e8ece" />
               {/* description  */}
               <h3 className=" group-hover:text-newblue font-semibold mt-7">
-                Life Coaching
+                Interenship 
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block transition-transform duration-350 ease-in-out ">
-                Create anything from social media posts business.
+                <p className=" mt-4 text-sm font-roboto  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                We provide job oriented summer interenship for B.Tech./Polytechnic students on latest technologies.
               </p>
               </div>
               
