@@ -1,34 +1,15 @@
-"use client";
-import React, { useState } from "react";
-import { useRouter } from "next/navigation";
+
 import { FaCaretDown } from "react-icons/fa";
-import Login from "../Login/Login";
-import { useSelector } from "react-redux";
-import { RootState } from "../app/store";
+
 import Link from "next/link";
 
-
-
-const html = document.documentElement
-
-const Navbar = () => {
-  
-  const [showLogin, setShowLogin] = useState(false);
-  const { user, isLoading } = useSelector((state: RootState) => state.user.value)
-
-  const loginStatus = () => {
-    setShowLogin(true);
-    html.style.overflow = "hidden";
-  };
-
- 
-
+const Navbar2 = () => {
   return (
-    <div className=" w-screen h-14 flex justify-center font-roboto">
+    <div className=" w-screen h-[80px] flex justify-center font-roboto border-b-2 shadow-sm">
       <p></p>
       <div className=" w-[85%] h-full flex">
         {/* left part  */}
-        <div className=" bg-navcolor h-full w-[85%] rounded-l-full flex justify-start text-white items-center gap-8 z-30">
+        <div className="  h-full w-[85%]  flex justify-start text-navcolor items-center gap-8 z-30">
           {/* home  */}
           <div className=" h-full group relative flex flex-col justify-center items-center ">
             <div className=" flex gap-2 items-center ml-8 cursor-pointer">
@@ -112,7 +93,7 @@ const Navbar = () => {
               <Link href='/services/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
                   TRAINING
                 </Link>
-              
+                
                 <Link href='/services/thesis' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
                   PHD & M-TECH THESIS
                 </Link>
@@ -145,40 +126,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* right part  */}
-        <div className=" group bg-newblue h-full w-[15%] rounded-r-full flex justify-center items-center cursor-pointer">
-          {showLogin ? (
-            <div className="w-screen h-screen backdrop-brightness-50  absolute inset-0 z-50">
-            <div className="">
-              <Login setShowLogin={setShowLogin} />
-            </div>
-          </div>
-          ) : (
-            <div>
-              { (user && !isLoading) ? (
-                <Link href="/dashboard">
-                <h3
-                
-                className=" text-white group-hover:text-navcolor font-bold text-[14px] leading-5"
-              >
-                DASHBOARD
-              </h3>
-              </Link>
-              ) : (
-                <h3
-                onClick={loginStatus}
-                className=" text-white group-hover:text-navcolor font-bold text-[14px] leading-5"
-              >
-                LOGIN
-              </h3>
-              )}
-              
-            </div>
-          )}
-        </div>
+        
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar2

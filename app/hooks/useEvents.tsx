@@ -86,7 +86,8 @@ const useEvents = () => {
       const response = await axios.get(
         `http://localhost:8080/events`);
       const EventData = response.data
-      //console.log('from usecategory', CategoryData)
+      console.log('from EventData', EventData)
+      console.log('from EventData reverse', EventData.reverse())
       dispatch({ type: ActionType.SUCCESS, payload: EventData });
     } catch (error: any) {
       //console.log(error);
@@ -96,6 +97,8 @@ const useEvents = () => {
       });
     }
   };
+
+
 //  add event 
   const addEvent = async (data:any) => {
     try {

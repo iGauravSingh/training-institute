@@ -42,7 +42,7 @@ const Hero = () => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 6000); // 6 seconds
 
-    console.log(currentImageIndex);
+    //console.log(currentImageIndex);
     return () => clearInterval(intervalId);
   }, [currentImageIndex]);
 

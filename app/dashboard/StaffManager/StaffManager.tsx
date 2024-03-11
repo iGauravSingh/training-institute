@@ -3,17 +3,7 @@ import useEmployee from "@/app/hooks/useStaff";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
-// interface EventForm {
-//   date: number;
-//   month: String;
-//   heading: String;
-//   venue: String;
-//   state: String;
-//   city: String;
-//   detail: String;
-//   timeStart: String;
-//   timeEnd: String;
-// }
+
 
 interface EmployeeForm {
   employeeId: String;
