@@ -9,7 +9,7 @@ import Link from "next/link";
 
 
 
-const html = document.documentElement
+const html = typeof document !== 'undefined' ? document.documentElement : null;
 
 const Navbar = () => {
   
@@ -17,8 +17,10 @@ const Navbar = () => {
   const { user, isLoading } = useSelector((state: RootState) => state.user.value)
 
   const loginStatus = () => {
-    setShowLogin(true);
+    if(html){
+      setShowLogin(true);
     html.style.overflow = "hidden";
+    }
   };
 
  

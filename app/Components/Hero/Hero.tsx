@@ -83,7 +83,7 @@ const Hero = () => {
      style={{ backgroundImage: `url(${images[currentImageIndex].image})` }}>
 
     </div> */}
-      <div className="relative w-screen h-screen overflow-hidden filter brightness-75">
+      <div className="relative w-screen h-screen overflow-hidden ">
         {images.map((img, index) => (
           <div
             key={img.id}
