@@ -16,6 +16,10 @@ const UpcomingEvents = () => {
   const { data, error, loading } = useEvents();
   const topFiveReversed = data?.slice(0, 5).reverse()
 
+  if(error){
+    console.log('event loading error')
+  }
+
   return (
     <div className=" w-screen min-h-screen font-quicksand ">
       <div className="w-full h-full flex flex-col py-20 items-center">

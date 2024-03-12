@@ -38,7 +38,7 @@ const Navbar = () => {
           {/* about  */}
           <div className=" h-full group relative flex flex-col justify-center items-center ">
             <div className=" flex gap-2 items-center cursor-pointer">
-            <Link href='/about'><h2 className=" text-[14px] font-bold leading-5">ABOUT</h2></Link>
+            <h2 className=" text-[14px] font-bold leading-5">ABOUT</h2>
               <FaCaretDown />
             </div>
             {/* drop down  */}
@@ -50,9 +50,9 @@ const Navbar = () => {
                 <Link href='/about/vision' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
                   VISION
                 </Link>
-                <Link href='/about/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
+                {/* <Link href='/about/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
                   TRAINING
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

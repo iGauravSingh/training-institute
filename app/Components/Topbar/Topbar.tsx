@@ -11,7 +11,14 @@ const Topbar = () => {
   return (
     <div className=" w-screen h-24 flex justify-center font-roboto">
       <div className=" w-[80%] flex justify-between items-center">
-        <Image className=" w-80" src={logo} alt="logo" />
+        <div className=" flex gap-4 justify-center items-center">
+        <Image className=" w-14" src={logo} alt="logo" />
+        <div className=" felx flex-col gap-1">
+          {/* <p className=" text-sm font-bold text-navcolor text-right">Established in 2009</p> */}
+          <h1 className=" text-3xl font-bold text-navcolor font-dm">Ebrains Techno Solution Pvt. Ltd.</h1>
+          {/* <p className=" text-sm font-bold text-navcolor text-right">An ISO 9001:2008 Certified Company</p> */}
+        </div>
+        </div>
         {/* logos  */}
         <div className=" flex gap-12">
           {/* mail  */}

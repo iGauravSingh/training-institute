@@ -12,23 +12,20 @@ const slide3 = "/images/slide-3.jpg";
 const images = [
   {
     id: 1,
-    heading: "Improve Your Personal Life",
-    Decsription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vitae!",
+    heading: "Boost Your Tech Prowess",
+    Decsription: "Master MERN, Django, & Python",
     image: slide1,
   },
   {
     id: 2,
-    heading: "Improve Your Business",
-    Decsription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vitae!",
+    heading: "Fuse Code with Creativity",
+    Decsription: "Unleash Your Full Stack Potential",
     image: slide2,
   },
   {
     id: 3,
-    heading: "Transform Your Life",
-    Decsription:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, vitae!",
+    heading: "Elevate Your Future",
+    Decsription: "Master the Art of Technology",
     image: slide3,
   },
 ];
@@ -86,7 +83,7 @@ const Hero = () => {
      style={{ backgroundImage: `url(${images[currentImageIndex].image})` }}>
 
     </div> */}
-      <div className="relative w-screen h-screen filter brightness-75 overflow-hidden">
+      <div className="relative w-screen h-screen overflow-hidden filter brightness-75">
         {images.map((img, index) => (
           <div
             key={img.id}
@@ -96,16 +93,24 @@ const Hero = () => {
             style={{ backgroundImage: `url(${img.image})` }}
           >
             {/* Add text caption here */}
-            <div className=" z-10 flex flex-col justify-center items-center h-full">
-              <h3 className=" text-white font-bold text-6xl">{img.heading}</h3>
-              <p className=" text-white font-bold text-lg mt-8">
+            <div className=" z-10 flex flex-col justify-center items-center h-full px-11">
+              <div className=" relative w-screen h-[70px]">
+              <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white text-5xl rounded px-8 py-9">
+              {img.heading}
+        </h2>
+                {/* <h3 className=" text-black font-bold text-5xl z-40">
+                  {img.heading}
+                </h3>
+                <div className=" absolute top-0 left-0 w-full bg-bluebackground opacity-60 px-6 py-6 z-30"></div> */}
+              </div>
+              {/* <p className=" text-white font-bold text-lg mt-8">
                 {img.Decsription}
-              </p>
+              </p> */}
               {/* buttons  */}
-              <div className="flex gap-8 mt-10">
+              {/* <div className="flex gap-8 mt-10">
                 <ButtonBlue name="CONTACT US" />
                 <ButtonGrey name="LEARN MORE" />
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

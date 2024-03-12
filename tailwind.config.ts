@@ -10,6 +10,7 @@ const config: Config = {
     fontFamily: {
       "quicksand": "Quicksand",
       "roboto": "Roboto",
+      "dm": "DM"
     },
     extend: {
       backgroundImage: {

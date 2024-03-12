@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import formImage from './appoinment-img-1.jpg'
+import formImage from './contact.jpg'
 import Image from 'next/image';
 
 const ContactForm = () => {

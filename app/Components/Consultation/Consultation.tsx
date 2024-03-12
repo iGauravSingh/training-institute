@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import formImage from "./appoinment-img-1.jpg";
+import formImage from "./contact.jpg";
 import ButtonBlue from "../Button/Button2";
 
 const Consultation = () => {
@@ -27,7 +27,7 @@ const Consultation = () => {
       <div className=" w-[80%] h-[80%] flex items-center">
         {/* image  */}
         <div className="w-[40%]">
-          <Image className=" w-full h-auto rounded-l-2xl" src={formImage} alt="formImage" />
+          <Image className=" w-full h-[571.55px] object-cover rounded-l-2xl" src={formImage} alt="formImage" />
         </div>
 
         {/* form  */}
