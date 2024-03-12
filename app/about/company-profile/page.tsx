@@ -80,7 +80,7 @@ To retain our position in this arena, we try our best to enhance our services as
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {testimonials.map(({ id, name, testimonial }) => (
             <div key={id} className="border p-4 rounded shadow">
-              <p className="mb-2 italic">"{testimonial}"</p>
+              <p className="mb-2 italic">{testimonial}</p>
               <p className="text-right">- {name}</p>
             </div>
           ))}
