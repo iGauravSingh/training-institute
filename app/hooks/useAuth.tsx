@@ -7,7 +7,7 @@ import { clearUser, setUser } from "../features/userSlice";
 const cookie = new Cookie()
 
 const urllocal ="http://localhost:8080"
-const urllive = "https://training-institute-backend.onrender.com/"
+const urllive = "https://training-institute-backend.onrender.com"
 
 const useAuth = () => {
     const dispatch = useDispatch();
