@@ -1,4 +1,4 @@
-
+"use client"
 import Navbar2 from '../Components/navbar2/navbar2'
 import Footer from '../Components/Footer/Footer'
 
@@ -7,7 +7,7 @@ import { FiClock } from "react-icons/fi";
 import { FaUniversity } from "react-icons/fa";
 import useEvents from "@/app/hooks/useEvents";
 
-const page = () => {
+const Page = () => {
 
     const { data, error, loading } = useEvents();
 
@@ -90,4 +90,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
