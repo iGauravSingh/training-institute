@@ -9,15 +9,17 @@ import { RiArticleFill } from "react-icons/ri";
 
 const Helpyou = () => {
   return (
-    <div className=" w-screen h-[480px] border-b-2 font-quicksand ">
+    <div className=" w-screen border-b-2 font-quicksand ">
       <div className="w-full h-full flex flex-col justify-center items-center">
-        <div className=" w-[85%] flex flex-col justify-start">
+        <div className=" w-[85%] flex flex-col justify-start mt-10">
           <h3 className=" text-newblue font-bold text-lg">WE CAN HELP YOU</h3>
           {/* card containr  */}
-          <div className=" flex gap-6 mt-6">
+          <div className="container mx-auto py-8 flex justify-center">
+            <div className=" grid grid-cols-1 md:grid-cols-4  gap-8">
+          
             {/* card 1  */}
             
-            <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
+            <div className=" w-[280px] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
               <RiArticleFill size={72} color="#2e8ece" />
               {/* description  */}
@@ -25,7 +27,7 @@ const Helpyou = () => {
                 Paper Writing and Publication
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                <p className=" mt-4 text-sm font-roboto  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
                 We provide assistance in publication of paper in SCI, Scopus Indexed journals.
               </p>
               </div>
@@ -34,7 +36,7 @@ const Helpyou = () => {
 
             {/* // */}
             {/* card 2  */}
-            <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
+            <div className=" w-[280px] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
               <MdPlagiarism size={72} color="#2e8ece" />
               {/* description  */}
@@ -42,7 +44,7 @@ const Helpyou = () => {
                 Plagiarism Removal
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                <p className=" mt-4 text-sm font-roboto  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
                 We provide assistance in plagiarism removal on Turnitin Tool.
               </p>
               </div>
@@ -52,7 +54,7 @@ const Helpyou = () => {
             {/* // */}
 
             {/* card 3  */}
-            <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
+            <div className=" w-[280px] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
               <GiGraduateCap size={72} color="#2e8ece" />
               {/* description  */}
@@ -60,7 +62,7 @@ const Helpyou = () => {
                 Project Training
               </h3>
               <div className="w-[200px]">
-                <p className=" mt-4 text-sm  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
+                <p className=" mt-4 text-sm font-roboto  text-center hidden group-hover:block group-hover:animate-moveup-cont ">
                 We provide three months project training for MCA Students on latest trends.
               </p>
               </div>
@@ -70,7 +72,7 @@ const Helpyou = () => {
             {/* // */}
 
             {/* card 4  */}
-            <div className=" w-[25%] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
+            <div className=" w-[280px] h-[310px] group flex flex-col justify-center items-center border border-slate-200 rounded-2xl px-8 py-5">
               {/* logo  */}
               <IoIosPeople size={72} color="#2e8ece" />
               {/* description  */}
@@ -86,6 +88,8 @@ const Helpyou = () => {
             </div>
 
             {/* // */}
+          
+          </div>
           </div>
         </div>
       </div>

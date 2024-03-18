@@ -37,7 +37,7 @@ const Navbar2 = () => {
             <div className=" h-full group relative flex flex-col justify-center items-center ">
               <div className=" flex gap-2 items-center cursor-pointer">
                 
-                  <h2 className=" text-[14px] font-bold leading-5">ABOUT</h2>
+              <Link href="/about"><h2 className=" text-[14px] font-bold leading-5">ABOUT</h2></Link>
                 
                 <FaCaretDown />
               </div>
@@ -69,7 +69,7 @@ const Navbar2 = () => {
             {/* COURSES  */}
             <div className=" h-full group relative flex flex-col justify-center items-center ">
               <div className=" flex gap-2 items-center cursor-pointer">
-                <h2 className=" text-[14px] font-bold leading-5">COURSES</h2>
+              <Link href="/services/training"><h2 className=" text-[14px] font-bold leading-5">COURSES</h2></Link>
                 <FaCaretDown />
               </div>
               {/* drop down  */}
@@ -142,7 +142,7 @@ const Navbar2 = () => {
             {/* SERVICES  */}
             <div className=" h-full group relative flex flex-col justify-center items-center ">
               <div className=" flex gap-2 items-center cursor-pointer">
-                <h2 className=" text-[14px] font-bold leading-5">SERVICES</h2>
+              <Link href="/services"><h2 className=" text-[14px] font-bold leading-5">SERVICES</h2></Link>
                 <FaCaretDown />
               </div>
               {/* drop down  */}

@@ -27,10 +27,10 @@ const Footer = () => {
         </div>
 
         {/* Second Column */}
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 text-navcolor">
+        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 text-navcolor flex flex-col items-center justify-center">
           <h3 className="text-lg font-semibold mb-2">Address</h3>
           {/* Address */}
-          <p className="text-md mb-2 font-semibold">3rd floor, Sahar Plaza, MunshiPulia Chauraha, Lucknow (Uttar Pardesh)</p>
+          <p className="text-md mb-2 font-semibold text-justify">3rd floor, Sahar Plaza, MunshiPulia Chauraha, Lucknow (Uttar Pardesh)</p>
           {/* Email */}
           <p className="text-md mb-2 font-semibold">info@ebrainstech.co.in</p>
           {/* Phone Number */}
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         {/* Third Column */}
-        <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 text-navcolor">
+        <div className=" hidden md:block w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 text-navcolor">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
           <ul className="text-md font-semibold">
             <li className="mb-1"><Link href="/">Home</Link></li>

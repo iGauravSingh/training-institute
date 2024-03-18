@@ -26,7 +26,8 @@ const Navbar = () => {
  
 
   return (
-    <div className=" w-screen h-14 flex justify-center font-roboto">
+   <div className=" hidden md:block">
+     <div className=" w-screen h-14 flex justify-center font-roboto">
       <p></p>
       <div className=" w-[85%] h-full flex">
         {/* left part  */}
@@ -40,7 +41,7 @@ const Navbar = () => {
           {/* about  */}
           <div className=" h-full group relative flex flex-col justify-center items-center ">
             <div className=" flex gap-2 items-center cursor-pointer">
-            <h2 className=" text-[14px] font-bold leading-5">ABOUT</h2>
+            <Link href="/about"><h2 className=" text-[14px] font-bold leading-5">ABOUT</h2></Link>
               <FaCaretDown />
             </div>
             {/* drop down  */}
@@ -62,7 +63,7 @@ const Navbar = () => {
           {/* COURSES  */}
           <div className=" h-full group relative flex flex-col justify-center items-center ">
             <div className=" flex gap-2 items-center cursor-pointer">
-              <h2 className=" text-[14px] font-bold leading-5">COURSES</h2>
+            <Link href="/services/training"><h2 className=" text-[14px] font-bold leading-5">COURSES</h2></Link>
               <FaCaretDown />
             </div>
             {/* drop down  */}
@@ -105,7 +106,7 @@ const Navbar = () => {
           {/* SERVICES  */}
           <div className=" h-full group relative flex flex-col justify-center items-center ">
             <div className=" flex gap-2 items-center cursor-pointer">
-              <h2 className=" text-[14px] font-bold leading-5">SERVICES</h2>
+            <Link href="/services"><h2 className=" text-[14px] font-bold leading-5">SERVICES</h2></Link>
               <FaCaretDown />
             </div>
             {/* drop down  */}
@@ -180,6 +181,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

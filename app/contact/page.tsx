@@ -50,7 +50,7 @@ const page = () => {
                 <div>
                   <p className=" text-2xl">Address​</p>
                   <p className=" text-lg">
-                    (+91)3rd floor, Sahar Plaza, MunshiPulia Chauraha, Lucknow
+                    3rd floor, Sahar Plaza, MunshiPulia Chauraha, Lucknow
                     (Uttar Pardesh)
                   </p>
                 </div>

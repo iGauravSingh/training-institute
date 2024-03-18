@@ -9,9 +9,10 @@ import CircularArrow from "../CircularArrow/CircularArrow";
 
 const Program = () => {
   return (
-    <div className=" h-[551px] w-screen">
-      <div className="w-full h-[550px] bg-bluebackground  ">
-        <div className=" flex justify-center gap-8 pt-16">
+    <div className=" w-screen">
+      <div className="w-full bg-bluebackground  ">
+        <div className="container mx-auto py-8 flex justify-center">
+        <div className=" grid grid-cols-1 md:grid-cols-3  gap-8 pt-16">
                   {/* card 1  */}
         <div className=" w-[22rem] group flex flex-col gap-6 transition-transform duration-300 transform hover:-translate-y-2">
           {/* image  */}
@@ -98,6 +99,7 @@ const Program = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
         </div>
       </div>

@@ -4,6 +4,10 @@
 
 import { useEffect, useReducer } from "react";
 import axios from "axios";
+import Cookie from "universal-cookie";
+
+
+const cookie = new Cookie();
 
 interface Event {
     id: number;
@@ -70,6 +74,7 @@ const reducer = (state: State, action: Action): State => {
 };
 
 const useEvents = () => {
+  const sessionToken = cookie.get("session_token");
   const [{ data, loading, error }, dispatch] = useReducer(
     reducer,
     initialState
@@ -86,8 +91,8 @@ const useEvents = () => {
       const response = await axios.get(
         `http://localhost:8080/events`);
       const EventData = response.data
-      console.log('from EventData', EventData)
-      console.log('from EventData reverse', EventData.reverse())
+      //console.log('from EventData', EventData)
+      //console.log('from EventData reverse', EventData.reverse())
       dispatch({ type: ActionType.SUCCESS, payload: EventData });
     } catch (error: any) {
       //console.log(error);
@@ -104,9 +109,15 @@ const useEvents = () => {
     try {
         console.log('i am in useEvent')
         const response = await axios.post(
-          `http://localhost:8080/events`,data);
+          `http://localhost:8080/events`,data,{
+            headers: {
+              ...(sessionToken
+                ? { Authorization: `Bearer ${sessionToken}` }
+                : null),
+            },
+          });
         const EventData = response.data
-        console.log('response i get after sending post request', EventData)
+        //console.log('response i get after sending post request', EventData)
         //dispatch({ type: ActionType.SUCCESS, payload: CategoryData });
       } catch (error: any) {
         console.log(error);
@@ -116,9 +127,15 @@ const useEvents = () => {
 //   Delete event 
   const deleteEvent = async (data:any) => {
     try {
-        console.log('i am in useEvent delete event',data)
+        //console.log('i am in useEvent delete event',data)
         const response = await axios.delete(
-          `http://localhost:8080/events/${data}`);
+          `http://localhost:8080/events/${data}`,{
+            headers: {
+              ...(sessionToken
+                ? { Authorization: `Bearer ${sessionToken}` }
+                : null),
+            },
+          });
         const EventData = response.data
         console.log('response i get after sending post request', EventData)
         //dispatch({ type: ActionType.SUCCESS, payload: CategoryData });

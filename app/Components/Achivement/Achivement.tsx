@@ -26,27 +26,35 @@ const Achivement = () => {
       <div className=" w-screen h-[50%] ">
         <div className=" w-[85%] h-full flex justify-center items-center gap-6">
           <div>
-            <h2 className=" w-[20rem] h-[168px] font-bold text-4xl text-navcolor">
+            <h2 className=" w-[20rem] h-[168px] font-bold text-2xl md:text-4xl text-navcolor">
               We Have Great Achivment To Show!!
             </h2>
           </div>
           <div className=" flex gap-8">
-          <div className=" flex flex-col gap-2">
-            <h1 className=" font-bold text-4xl text-newblue">1238</h1>
-            <p>Satisfied Customers</p>
-          </div>
-          <div className=" flex flex-col gap-2">
-            <h1 className=" font-bold text-4xl text-newblue">850</h1>
-            <p>People Across</p>
-          </div>
-          <div className=" flex flex-col gap-2">
-            <h1 className=" font-bold text-4xl text-newblue">10</h1>
-            <p>Years Experience</p>
-          </div>
-          <div className=" flex flex-col gap-2">
-            <h1 className=" font-bold text-4xl text-newblue">232</h1>
-            <p>Persons Mentored</p>
-          </div>
+            <div className=" flex flex-col gap-2">
+              <h1 className=" font-bold text-2xl md:text-4xl text-newblue">
+                12389
+              </h1>
+              <p>Satisfied Students</p>
+            </div>
+            <div className=" flex flex-col gap-2 ">
+              <h1 className=" font-bold text-2xl md:text-4xl text-newblue">
+                1850
+              </h1>
+              <p>Student Across</p>
+            </div>
+            <div className=" flex flex-col gap-2">
+              <h1 className=" font-bold text-2xl md:text-4xl text-newblue">
+                15
+              </h1>
+              <p>Years Experience</p>
+            </div>
+            <div className=" flex flex-col gap-2">
+              <h1 className=" font-bold text-2xl md:text-4xl text-newblue">
+                878
+              </h1>
+              <p>Persons Mentored</p>
+            </div>
           </div>
         </div>
       </div>

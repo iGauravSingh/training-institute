@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <Navbar2 />
-      <div className=" bg-gray-200 font-roboto ">
+      <div className=" bg-gray-200 font-roboto text-justify ">
         <div className="flex flex-col items-center font-roboto">
           <div className="w-full text-center relative">
             <Image src={bg} alt="Placeholder" className="mx-auto  mb-4" />
