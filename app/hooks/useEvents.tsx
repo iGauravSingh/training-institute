@@ -9,6 +9,9 @@ import Cookie from "universal-cookie";
 
 const cookie = new Cookie();
 
+const urllocal ="http://localhost:8080"
+const urllive = "https://training-institute-backend.onrender.com/"
+
 interface Event {
     id: number;
     date: number;
@@ -89,7 +92,7 @@ const useEvents = () => {
     dispatch({ type: ActionType.LOADING });
     try {
       const response = await axios.get(
-        `http://localhost:8080/events`);
+        `${urllive}/events`);
       const EventData = response.data
       //console.log('from EventData', EventData)
       //console.log('from EventData reverse', EventData.reverse())
@@ -109,7 +112,7 @@ const useEvents = () => {
     try {
         console.log('i am in useEvent')
         const response = await axios.post(
-          `http://localhost:8080/events`,data,{
+          `${urllive}/events`,data,{
             headers: {
               ...(sessionToken
                 ? { Authorization: `Bearer ${sessionToken}` }
@@ -129,7 +132,7 @@ const useEvents = () => {
     try {
         //console.log('i am in useEvent delete event',data)
         const response = await axios.delete(
-          `http://localhost:8080/events/${data}`,{
+          `${urllive}/${data}`,{
             headers: {
               ...(sessionToken
                 ? { Authorization: `Bearer ${sessionToken}` }
