@@ -21,7 +21,7 @@ const page = () => {
           e-Brain[s] Tech is an ISO 9001:2008 Certified Company and a premier institute in INDIA dedicated to educating teachers, students, and the public about the promise and challenges of technology. Established with the vision to become a leading force in the tech industry, e-Brain[s] Tech offers a wide range of technical training, workshops, and research project assistance.
         </p>
         <p className="mt-4">
-          Our mission is to bridge the gap between the fast-growing industry demands and the skills of our students. With a team of dedicated experts, we're here to equip our learners with the knowledge and tools they need to succeed in the competitive tech landscape.
+          Our mission is to bridge the gap between the fast-growing industry demands and the skills of our students. With a team of dedicated experts, we&aposre here to equip our learners with the knowledge and tools they need to succeed in the competitive tech landscape.
         </p>
       </div>
 

@@ -23,7 +23,7 @@ const page = () => {
             Our team of experienced developers follows industry best practices to ensure that your mobile app is fast, responsive, and user-friendly. We work closely with you throughout the development process to understand your requirements and deliver a customized solution that meets your needs.
           </p>
           <p className="text-gray-700 mb-4">
-            Whether you're a startup looking to launch your first app or an established business wanting to expand your mobile presence, we're here to help you bring your ideas to life. Contact us today to discuss your mobile app development project!
+            Whether you&aposre a startup looking to launch your first app or an established business wanting to expand your mobile presence, we&aposre here to help you bring your ideas to life. Contact us today to discuss your mobile app development project!
           </p>
         </div>
       </div>
