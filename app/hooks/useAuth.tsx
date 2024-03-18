@@ -23,6 +23,21 @@ const useAuth = () => {
         }
     }
 
+    const updatePassword = async ({ password } : {password: String}) => {
+        const sessionToken = cookie.get("session_token")
+        try {
+            const response = await axios.put("http://localhost:8080/auth/change-password", { password },{
+                headers: {
+                    ...(sessionToken ? {Authorization: `Bearer ${sessionToken}`} : null)
+                }
+            });
+            console.log(response)
+        return response.data
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     const signup = async ({email, password, username}: {email: String, password: String, username: String}) => {
         const response = await axios.post("http://localhost:8080/auth/signup", {email, password, username})
         const {user,token} = response.data;
@@ -53,10 +68,10 @@ const useAuth = () => {
 
     const logout = () => {
         cookie.remove("session_token")
-        return dispatch(clearUser())
+        
     }
 
-    return {signup, login, logout, fetchUser }
+    return {signup, login, logout, fetchUser, updatePassword }
 
 }
 

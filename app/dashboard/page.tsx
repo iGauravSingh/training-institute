@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+// import { redirect } from 'next/navigation';
 import { Provider } from "react-redux";
 import { store } from "../Components/app/store";
 import Navbar from "../Components/Navbar/Navbar";
@@ -9,7 +10,9 @@ import StaffManager from "./StaffManager/StaffManager";
 
 import Cookie from "universal-cookie";
 import Link from "next/link";
+import ChangePassword from "./changepassword/ChangePassword";
 
+// import useAuth from "../hooks/useAuth";
 
 const cookie = new Cookie();
 
@@ -17,6 +20,8 @@ const cookie = new Cookie();
 
 
 const Dashboard = () => {
+  // const {logout} = useAuth()
+  const router = useRouter()
   const sessionToken = cookie.get("session_token");
   const [clicked, setClicked] = useState('events')
 
@@ -25,6 +30,15 @@ const Dashboard = () => {
   }
   const handleStaffClick =() => {
     setClicked('staff')
+  }
+  const handleChangePassowrdClick =() => {
+    setClicked('changepassword')
+  }
+  const handleLogoutClick =async () => {
+    cookie.remove("session_token")
+     router.push("/")
+    // await logout()
+    // redirect to home page 
   }
   
   if(!sessionToken){
@@ -52,12 +66,17 @@ const Dashboard = () => {
           {/* admin menu  */}
           <div className=" bg-slate-400 border-2 border-r-slate-500 flex flex-col justify-start items-center w-[20%] min-h-screen px-16 gap-8 py-10">
             <p onClick={handleEventClick} className=" cursor-pointer hover:text-navcolor">Events</p>
+            <p onClick={handleChangePassowrdClick} className=" cursor-pointer hover:text-navcolor">Change Password</p>
             <p onClick={handleStaffClick} className=" cursor-pointer hover:text-navcolor">Staff</p>
+            <p onClick={handleLogoutClick} className=" cursor-pointer hover:text-navcolor">Logout</p>
           </div>
 
           {/* admin control  */}
           <div className=" w-[80%] h-full ">
-            {clicked === 'events' ? (<EventManager />) : (<StaffManager />)}
+            {/* {clicked === 'events' ? (<EventManager />) : (<StaffManager />)} */}
+            {clicked === 'events' && <EventManager />}
+            {clicked === 'changepassword' && <ChangePassword />}
+            {clicked === 'staff' && <StaffManager />}
           </div>
         </div>
       </div>
