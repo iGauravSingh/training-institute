@@ -14,11 +14,15 @@ import Footer from "./Components/Footer/Footer";
 
 import { Provider } from "react-redux";
 import { store } from "./Components/app/store";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Provider store={store} >
     <>
+    <Head>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
     <Topbar />
     <Navbar />
     <Hero />

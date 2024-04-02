@@ -60,7 +60,7 @@ const Dashboard = () => {
 
   return (
     <Provider store={store}>
-      <div className=" w-screen min-h-screen  bg-slate-200 ">
+      <div className=" w-screen min-h-screen  bg-slate-200 mb-20">
         <Navbar />
         <div className="flex ">
           {/* admin menu  */}
@@ -72,7 +72,7 @@ const Dashboard = () => {
           </div>
 
           {/* admin control  */}
-          <div className=" w-[80%] h-full ">
+          <div className=" w-[80%] h-full mb-20 ">
             {/* {clicked === 'events' ? (<EventManager />) : (<StaffManager />)} */}
             {clicked === 'events' && <EventManager />}
             {clicked === 'changepassword' && <ChangePassword />}

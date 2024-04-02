@@ -101,7 +101,7 @@ const useEvents = () => {
       //console.log(error);
       dispatch({
         type: ActionType.FAILED,
-        payload: error?.response.error,
+        payload: error?.response,
       });
     }
   };

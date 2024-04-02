@@ -29,7 +29,7 @@ const UpcomingEvents = () => {
             UPCOMING EVENTS
           </h3>
 
-          {topFiveReversed?.reverse().map((evnt) => (
+          {data?.reverse().slice(0, 5).map((evnt) => (
             <div key={evnt.id}>
               {/* card containr  */}
               <div className=" flex border-b-2 justify-between items-center pb-5 pt-4">
