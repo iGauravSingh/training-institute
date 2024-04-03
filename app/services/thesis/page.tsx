@@ -1,6 +1,6 @@
 import Navbar2 from "@/app/Components/navbar2/navbar2";
 import bg from "../../../public/images/bg-06-free-img.jpg";
-import toppic from "../../../public/images/mobile-developmen-t.jpg"
+import toppic from "../../../public/images/mobile.jpg"
 import Image from "next/image";
 import Footer from "@/app/Components/Footer/Footer";
 

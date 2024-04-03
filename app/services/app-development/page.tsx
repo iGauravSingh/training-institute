@@ -1,7 +1,7 @@
 import Footer from '@/app/Components/Footer/Footer'
 import Navbar2 from '@/app/Components/navbar2/navbar2'
 import React from 'react'
-import mobiledev from '../../../public/images/mobile-developmen-t.jpg'
+import mobiledev from '../../../public/images/mobile.jpg'
 import Image from 'next/image'
 
 const page = () => {
