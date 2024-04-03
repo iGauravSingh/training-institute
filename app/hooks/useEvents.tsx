@@ -10,7 +10,8 @@ import Cookie from "universal-cookie";
 const cookie = new Cookie();
 
 const urllocal ="http://localhost:8080"
-const urllive = "https://training-institute-backend.onrender.com"
+// const urllive = "https://training-institute-backend.onrender.com"
+const urllive = "http://139.59.0.106:8080"
 
 interface Event {
     id: number;
