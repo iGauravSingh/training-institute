@@ -8,7 +8,7 @@ const cookie = new Cookie()
 
 const urllocal ="http://167.71.224.38:8080"
 // const urllive = "https://training-institute-backend.onrender.com"
-const urllive = "http://139.59.0.106:8080"
+// const urllive = "http://139.59.0.106:8080"
 
 const useAuth = () => {
     const dispatch = useDispatch();

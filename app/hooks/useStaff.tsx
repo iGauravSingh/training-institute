@@ -107,7 +107,7 @@ const useEmployee = () => {
     try {
       console.log("i am in useEmployee delete employee",data);
       const response = await axios.delete(
-        `http://localhost:8080/staff/${data}`
+        `http://167.71.224.38/staff/${data}`
       );
       const EmployeeData = response.data;
       console.log("response i get after sending post request", EmployeeData);

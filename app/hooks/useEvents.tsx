@@ -11,7 +11,7 @@ const cookie = new Cookie();
 
 const urllocal ="http://167.71.224.38:8080"
 // const urllive = "https://training-institute-backend.onrender.com"
-const urllive = "http://139.59.0.106:8080"
+// const urllive = "http://139.59.0.106:8080"
 
 interface Event {
     id: number;
@@ -133,7 +133,7 @@ const useEvents = () => {
     try {
         //console.log('i am in useEvent delete event',data)
         const response = await axios.delete(
-          `${urllive}/${data}`,{
+          `${urllocal}/${data}`,{
             headers: {
               ...(sessionToken
                 ? { Authorization: `Bearer ${sessionToken}` }
