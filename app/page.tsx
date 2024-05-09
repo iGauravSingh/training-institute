@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import Topbar from "./Components/Topbar/Topbar";
 import Navbar from "./Components/Navbar/Navbar";
@@ -18,23 +18,23 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <Provider store={store} >
-    <>
-    <Head>
+    <Provider store={store}>
+      <>
+        <Head>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-    <Topbar />
-    <Navbar />
-    <Hero />
-    <Program />
-    <WhyChoose />
-    <Aboutus />
-    <Achivement />
-    <Helpyou />
-    <UpcomingEvents />
-    <Consultation />
-    <Footer />
-    </>
+        <Topbar />
+        <Navbar />
+        <Hero />
+        <Program />
+        <WhyChoose />
+        <Aboutus />
+        <Achivement />
+        <Helpyou />
+        <UpcomingEvents />
+        <Consultation />
+        <Footer />
+      </>
     </Provider>
   );
 }

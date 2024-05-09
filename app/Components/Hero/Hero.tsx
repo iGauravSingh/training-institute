@@ -44,7 +44,10 @@ const Hero = () => {
   }, [currentImageIndex]);
 
   const handleLeftClick = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1) % images.length);
+    if(currentImageIndex > 1) {
+      setCurrentImageIndex((prevIndex) => (prevIndex - 1) % images.length);
+    }
+    
   };
 
   const handleRightClick = () => {
@@ -78,46 +81,36 @@ const Hero = () => {
   };
 
   return (
-    <div className=" relative">
-      {/* <div className="bg-cover bg-center bg-fixed w-screen h-screen filter brightness-75"
-     style={{ backgroundImage: `url(${images[currentImageIndex].image})` }}>
-
-    </div> */}
-      <div className="relative w-screen h-screen overflow-hidden ">
+    <div className=" relative ">
+      
+      <div className="relative w-screen h-screen overflow-hidden">
+        <div className=" w-full flex justify-center items-center">
         {images.map((img, index) => (
           <div
-            key={img.id}
-            className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
-              index === currentImageIndex ? "translate-x-0" : "translate-x-full"
-            }`}
-            style={{ backgroundImage: `url(${img.image})` }}
-          >
-            {/* Add text caption here */}
-            <div className=" z-10 flex flex-col justify-center items-center h-full px-11">
-              <div className=" relative w-screen h-[70px]">
-              <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white text-5xl rounded px-8 py-9">
-              {img.heading}
-        </h2>
-                {/* <h3 className=" text-black font-bold text-5xl z-40">
-                  {img.heading}
-                </h3>
-                <div className=" absolute top-0 left-0 w-full bg-bluebackground opacity-60 px-6 py-6 z-30"></div> */}
-              </div>
-              {/* <p className=" text-white font-bold text-lg mt-8">
-                {img.Decsription}
-              </p> */}
-              {/* buttons  */}
-              {/* <div className="flex gap-8 mt-10">
-                <ButtonBlue name="CONTACT US" />
-                <ButtonGrey name="LEARN MORE" />
-              </div> */}
+          key={img.id}
+          className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
+            index === currentImageIndex ? "translate-x-0" : "translate-x-full"
+          }`}
+          style={{ backgroundImage: `url(${img.image})` }}
+        >
+          {/* Add text caption here */}
+          <div className=" z-10 flex flex-col justify-center items-center h-full px-11">
+            <div className=" relative w-screen h-[70px]">
+            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white text-5xl rounded px-8 py-9">
+            {img.heading}
+      </h2>
+              
             </div>
+           
           </div>
+        </div>
         ))}
+        </div>
       </div>
 
       {/* next button  */}
       <div
+      onClick={handleLeftClick}
         onMouseEnter={handleMouseEnterLeft}
         onMouseLeave={handleMouseLeaveLeft}
         className=" absolute top-[50%] left-8 w-12 h-12 rounded-full bg-white hover:bg-newblue flex justify-center items-center cursor-pointer "
@@ -126,6 +119,7 @@ const Hero = () => {
       </div>
 
       <div
+      onClick={handleRightClick}
         onMouseEnter={handleMouseEnterRight}
         onMouseLeave={handleMouseLeaveRight}
         className=" absolute top-[50%] right-8 w-12 h-12 rounded-full bg-white hover:bg-newblue flex justify-center items-center cursor-pointer  "

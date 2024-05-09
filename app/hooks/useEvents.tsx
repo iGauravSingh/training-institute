@@ -93,7 +93,7 @@ const useEvents = () => {
     dispatch({ type: ActionType.LOADING });
     try {
       const response = await axios.get(
-        `${urllive}/events`);
+        `${urllocal}/events`);
       const EventData = response.data
       //console.log('from EventData', EventData)
       //console.log('from EventData reverse', EventData.reverse())
@@ -113,7 +113,7 @@ const useEvents = () => {
     try {
         console.log('i am in useEvent')
         const response = await axios.post(
-          `${urllive}/events`,data,{
+          `${urllocal}/events`,data,{
             headers: {
               ...(sessionToken
                 ? { Authorization: `Bearer ${sessionToken}` }

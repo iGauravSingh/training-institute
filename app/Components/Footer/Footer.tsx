@@ -30,7 +30,9 @@ const Footer = () => {
         <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4 text-navcolor flex flex-col items-center justify-center">
           <h3 className="text-lg font-semibold mb-2">Address</h3>
           {/* Address */}
-          <p className="text-md mb-2 font-semibold text-justify">3rd floor, Sahar Plaza, MunshiPulia Chauraha, Lucknow (Uttar Pardesh)</p>
+          <p className="text-md mb-2 font-semibold text-justify">3rd floor, Sahar Plaza,</p>
+          <p className="text-md mb-2 font-semibold text-justify"> MunshiPulia Chauraha,</p>
+          <p className="text-md mb-2 font-semibold text-justify">Lucknow (Uttar Pardesh)</p>
           {/* Email */}
           <p className="text-md mb-2 font-semibold">info@ebrainstech.co.in</p>
           {/* Phone Number */}

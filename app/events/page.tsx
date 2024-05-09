@@ -31,7 +31,7 @@ const Page = () => {
               {/* card containr  */}
               <div className=" flex border-b-2 justify-between items-center pb-5 pt-4">
                 {/* Date Detail Container  */}
-                <div className=" flex justify-between items-center gap-6">
+                <div className=" flex flex-col md:flex-row justify-between md:items-center items-start gap-6">
                   {/* Date  */}
                   <div className=" w-[80px] h-[80px] rounded-xl bg-newblue text-white flex flex-col justify-center items-center">
                     <p className=" text-[1rem]">{evnt.month}</p>
@@ -65,7 +65,7 @@ const Page = () => {
                       <div className=" flex items-center">
                         <FiClock size={14} color="#2e8ece" />
                         <p>
-                          {evnt.timeStart},{evnt.timeEnd}
+                          {evnt.timeStart} - {evnt.timeEnd}
                         </p>
                       </div>
                     </div>

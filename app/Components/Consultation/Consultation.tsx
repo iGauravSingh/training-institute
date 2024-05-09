@@ -12,7 +12,8 @@ const Consultation = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log("Form submitted:", { fullName, address, subject, message });
+    // console.log("Form submitted:", { fullName, address, subject, message });
+    alert("Your Query Has Been Submitted.")
     setFullName("");
     setAddress("");
     setSubject("");
@@ -82,7 +83,7 @@ const Consultation = () => {
                 required
               />
             </div>
-            <ButtonBlue name='SUBMIT MESSAGE' />
+            <button className=" px-4 py-2 rounded-lg text-white text-lg bg-[#2e8ece] w-56 ">Submit Message</button>
           </form>
         </div>
       </div>

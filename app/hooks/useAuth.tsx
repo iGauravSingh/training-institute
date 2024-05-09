@@ -16,7 +16,7 @@ const useAuth = () => {
     const login = async ({ email, password} : {email: String, password: String}) => {
 
         try {
-            const response = await axios.post(`${urllive}/auth/login`, { email, password });
+            const response = await axios.post(`${urllocal}/auth/login`, { email, password });
         console.log(response.data)
         const { user, token } = response.data;
         cookie.set("session_token", token)
@@ -30,7 +30,7 @@ const useAuth = () => {
     const updatePassword = async ({ password } : {password: String}) => {
         const sessionToken = cookie.get("session_token")
         try {
-            const response = await axios.put(`${urllive}/auth/change-password`, { password },{
+            const response = await axios.put(`${urllocal}/auth/change-password`, { password },{
                 headers: {
                     ...(sessionToken ? {Authorization: `Bearer ${sessionToken}`} : null)
                 }
@@ -43,7 +43,7 @@ const useAuth = () => {
     }
 
     const signup = async ({email, password, username}: {email: String, password: String, username: String}) => {
-        const response = await axios.post(`${urllive}/auth/signup`, {email, password, username})
+        const response = await axios.post(`${urllocal}/auth/signup`, {email, password, username})
         const {user,token} = response.data;
         cookie.set("session_token", token)
         dispatch(setUser({email: user.email, username: user.username}))
@@ -53,7 +53,7 @@ const useAuth = () => {
     const fetchUser = async () => {
         const sessionToken = cookie.get("session_token")
         try {
-            const response = await axios.get(`${urllive}/auth/me`, {
+            const response = await axios.get(`${urllocal}/auth/me`, {
                 headers: {
                     ...(sessionToken ? {Authorization: `Bearer ${sessionToken}`} : null)
                 }
