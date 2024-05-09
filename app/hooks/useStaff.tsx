@@ -77,7 +77,7 @@ const useEmployee = () => {
     //const sessionToken = cookie.get("session_token");
     dispatch({ type: ActionType.LOADING });
     try {
-      const response = await axios.get(`http://localhost:8080/staff`);
+      const response = await axios.get(`http://167.71.224.38/staff`);
       const EmployeeData = response.data;
       //console.log('from usecategory', CategoryData)
       dispatch({ type: ActionType.SUCCESS, payload: EmployeeData });
@@ -93,7 +93,7 @@ const useEmployee = () => {
   const addEmployee = async (data: any) => {
     try {
       console.log("i am in useEmployee");
-      const response = await axios.post(`http://localhost:8080/staff`, data);
+      const response = await axios.post(`http://167.71.224.38/staff`, data);
       const EmployeeData = response.data;
       console.log("response i get after sending post request", EmployeeData);
       //dispatch({ type: ActionType.SUCCESS, payload: CategoryData });
