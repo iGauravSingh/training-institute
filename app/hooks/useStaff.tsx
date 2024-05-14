@@ -77,7 +77,7 @@ const useEmployee = () => {
     //const sessionToken = cookie.get("session_token");
     dispatch({ type: ActionType.LOADING });
     try {
-      const response = await axios.get(`http://167.71.224.38/staff`);
+      const response = await axios.get(`https://training-institute-backend-1.onrender.com/staff`);
       const EmployeeData = response.data;
       //console.log('from usecategory', CategoryData)
       dispatch({ type: ActionType.SUCCESS, payload: EmployeeData });
@@ -93,7 +93,7 @@ const useEmployee = () => {
   const addEmployee = async (data: any) => {
     try {
       console.log("i am in useEmployee");
-      const response = await axios.post(`http://143.110.244.219:8080/staff`, data);
+      const response = await axios.post(`https://training-institute-backend-1.onrender.com/staff`, data);
       const EmployeeData = response.data;
       console.log("response i get after sending post request", EmployeeData);
       //dispatch({ type: ActionType.SUCCESS, payload: CategoryData });
@@ -107,7 +107,7 @@ const useEmployee = () => {
     try {
       console.log("i am in useEmployee delete employee",data);
       const response = await axios.delete(
-        `http://143.110.244.219:8080/staff/${data}`
+        `https://training-institute-backend-1.onrender.com/staff/${data}`
       );
       const EmployeeData = response.data;
       console.log("response i get after sending post request", EmployeeData);

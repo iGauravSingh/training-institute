@@ -6,7 +6,7 @@ import { clearUser, setUser } from "../features/userSlice";
 
 const cookie = new Cookie()
 
-const urllocal ="http://143.110.244.219:8080"
+const urllocal ="https://training-institute-backend-1.onrender.com"
 // const urllive = "https://training-institute-backend.onrender.com"
 // const urllive = "http://139.59.0.106:8080"
 

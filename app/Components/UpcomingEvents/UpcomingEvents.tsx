@@ -15,7 +15,7 @@ const UpcomingEvents = () => {
 
   
   const { data, error, loading } = useEvents();
-  const topFiveReversed = data?.slice(0, 5).reverse()
+  const topFiveReversed = data?.slice(0, 5)
 
   if(error){
     console.log('event loading error')
