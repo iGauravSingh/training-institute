@@ -60,7 +60,7 @@ const Dashboard = () => {
 
   return (
     <Provider store={store}>
-      <div className=" w-screen min-h-screen  bg-slate-200 mb-20">
+      <div className=" w-screen   bg-slate-200 mb-20">
         <Navbar />
         <div className="flex ">
           {/* admin menu  */}

@@ -31,15 +31,18 @@ const Page = () => {
               {/* card containr  */}
               <div className=" flex border-b-2 justify-between items-center pb-5 pt-4">
                 {/* Date Detail Container  */}
-                <div className=" flex flex-col md:flex-row justify-between md:items-center items-start gap-6">
+                <div className=" w-screen flex flex-col md:flex-row md:items-center items-start">
                   {/* Date  */}
+                  <div className='w-full  md:w-[10%]'>
                   <div className=" w-[80px] h-[80px] rounded-xl bg-newblue text-white flex flex-col justify-center items-center">
                     <p className=" text-[1rem]">{evnt.month}</p>
                     <p className=" text-5xl font-bold">{evnt.date}</p>
                   </div>
+                  </div>
 
                   {/* Details  */}
-                  <div className=" flex flex-col gap-2">
+                  <div className=' w-full md:w-[80%]'>
+                  <div className=" w-full flex flex-col gap-2 text-justify">
                     <h3 className=" font-bold text-xl">
                       {evnt.heading}
                     </h3>
@@ -69,6 +72,7 @@ const Page = () => {
                         </p>
                       </div>
                     </div>
+                  </div>
                   </div>
                 </div>
 
