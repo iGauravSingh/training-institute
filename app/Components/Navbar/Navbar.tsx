@@ -113,6 +113,12 @@ const Navbar = () => {
             <div className=" hidden group-hover:block animate-slide-down absolute z-20 top-14 left-0 bg-bluebackground w-64 text-navcolor">
               <div className=" flex flex-col gap-1 justify-center items-start text-[14px]">
               <Link href='/services/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
+              WEB DEVELOPMENT
+                </Link>
+                <Link href='/services/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
+                APP DEVELOPMENT
+                </Link>
+              <Link href='/services/training' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
                   TRAINING
                 </Link>
               
