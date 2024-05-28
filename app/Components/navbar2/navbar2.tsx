@@ -13,7 +13,7 @@ const Navbar2 = () => {
         <div className="  h-full w-full  flex justify-between  text-navcolor items-center z-30">
           {/* logo  */}
           <div className=" flex gap-4 justify-center items-center">
-            <Image className=" w-10" src={logo} alt="logo" />
+            <Link href="/" ><Image className=" w-10" src={logo} alt="logo" /></Link>
             <div className=" felx flex-col gap-1">
               {/* <p className=" text-sm font-bold text-navcolor text-right">Established in 2009</p> */}
               <h1 className=" text-xl font-bold text-navcolor font-dm">
@@ -148,6 +148,12 @@ const Navbar2 = () => {
               {/* drop down  */}
               <div className=" hidden group-hover:block animate-slide-down absolute z-20 top-14 left-0 bg-bluebackground w-64 text-navcolor">
                 <div className=" flex flex-col gap-1 justify-center items-start text-[14px]">
+                <Link href='/services/web-development' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
+              WEB DEVELOPMENT
+                </Link>
+                <Link href='/services/app-development' className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1">
+                APP DEVELOPMENT
+                </Link>
                   <Link
                     href="/services/training"
                     className=" cursor-pointer hover:bg-newblue hover:text-bluebackground w-full px-2 py-1"
