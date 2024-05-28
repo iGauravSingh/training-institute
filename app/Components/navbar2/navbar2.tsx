@@ -6,21 +6,28 @@ import logo from "./logo1.png";
 
 const Navbar2 = () => {
   return (
-    <div className=" w-screen h-[80px] flex justify-center font-roboto border-b-2 shadow-sm">
+    <div className=" w-screen h-[80px] flex justify-center font-roboto shadow-sm">
       <p></p>
       <div className=" w-[85%] h-full flex">
         {/* left part  */}
         <div className="  h-full w-full  flex justify-between  text-navcolor items-center z-30">
           {/* logo  */}
-          <div className=" flex gap-4 justify-center items-center">
-            <Link href="/" ><Image className=" w-10" src={logo} alt="logo" /></Link>
-            <div className=" felx flex-col gap-1">
+          <div className=" w-full flex gap-4 items-center">
+            <div>
+            <Link href="/" >
+              <div>
+              <Image className=" w-10" src={logo} alt="logo" />
+              </div>
+              <div className=" felx flex-col gap-1">
               {/* <p className=" text-sm font-bold text-navcolor text-right">Established in 2009</p> */}
-              <h1 className=" text-xl font-bold text-navcolor font-dm">
-                Ebrains Techno Solution Pvt. Ltd.
+              <h1 className=" text-sm lg:text-xl font-bold text-navcolor font-dm">
+                Ebrains Tech
               </h1>
               {/* <p className=" text-sm font-bold text-navcolor text-right">An ISO 9001:2008 Certified Company</p> */}
             </div>
+            </Link>
+            </div>
+            
           </div>
 
           {/* menu items  */}
